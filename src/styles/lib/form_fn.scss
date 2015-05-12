@@ -1,0 +1,151 @@
+
+@mixin iform {  
+    font-size : 14px;
+    
+    .row {
+        @include clrfix; 
+    }
+    .lb , .linp , .ct {
+        @include fl;
+    }
+    .ct {
+        position : relative;
+    }
+    .inp-txt , .inp-text {
+        border : 1px solid #8095A5;
+        padding: 0px;
+        padding-left : 8px;
+        width : 220px;
+        height : 40px;
+        line-height : 40px;
+        font-size : 14px;
+        &:focus {
+            outline : none;
+        }
+    }
+    .error {
+        border : 1px solid #ff0000;
+    }
+    .val-code {
+        width : 110px;
+        @include  fl;
+    }
+    
+    .send-code {
+        @include nbtn;
+    }
+        
+    .chbox {
+        @include unselectable;
+        .ch {
+            cursor : pointer;
+            height : 20px;
+            width : 17px;
+            vertical-align : middle;
+            @include inline-block;
+            background : url('#{$img_host}/sp.png') no-repeat -179px -100px; 
+            margin-right : 6px;
+            input {
+                visibility : hidden;
+            }
+        } 
+    }
+    .checked {
+        .ch {
+            background : url('#{$img_host}/sp.png') no-repeat -150px -100px;
+        }
+    }
+
+    .btn {
+        @include nbtn;
+        width : 135px;
+        height : 28px;
+        line-height : 28px;
+    }
+    .row {
+        position : relative;
+    }
+    .tip-info {
+         position : absolute;
+         top : 5px;
+         right : -210px;
+         width : 220px;
+         height : 30px;
+         @include border-radius(4px);
+        .tip-trg{
+            position : absolute;
+            top : 50%;
+            left : -14px;
+            .trg-out , .trg-in{
+                position : absolute;
+            }
+            .trg-out {
+                top : -8px;
+                left : -2px;
+            }
+            .trg-in {
+                top : -7px;
+                left : 1px;
+            }
+        }
+        .tip-content {
+            padding : 4px 5px;
+            font-size : 14px;
+            line-height : 1.5em; 
+        }
+
+        .tip-icon {
+            @include fl;
+            width : 22px; 
+            height : 22px;
+            margin-right : 8px;
+        } 
+    }
+
+    .s-alert {
+        border : 1px solid #ff0000;
+        background-color : #ff6565;
+        color :#fff;
+
+        .tip-trg{
+            .trg-out {
+                @include triangle-right(#ff0000,8px);
+            }
+            .trg-in {
+                @include triangle-right(#ff6565,7px);
+            }
+        }  
+        .tip-icon {
+            background : url('#{$img_host}/sp.png') no-repeat -225px -191px; 
+        }
+
+    }
+    .s-info {
+
+        border : 1px solid #333F51;
+        background-color : #97A4AF;
+        color :#fff;
+        
+        .tip-trg{
+            .trg-out {
+                @include triangle-right(#333F51,8px);
+            }
+            .trg-in {
+                @include triangle-right(#97A4AF,7px);
+            }
+        }  
+        .tip-icon {
+            background : url('#{$img_host}/sp.png') no-repeat -261px -190px; 
+        }
+    }
+
+}
+
+@mixin dinp {
+    border : 1px solid #8095A5;
+    padding: 0px;
+    padding-left : 8px;
+    width : 220px;
+    height : 40px;
+    line-height : 40px;
+}

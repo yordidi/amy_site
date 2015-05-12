@@ -1,0 +1,38 @@
+.g-ft-box {
+    margin-top : 80px;
+    .g-ft {
+        width : 960px;
+        margin : 0 auto;
+    }
+}
+.ft-nav {
+   text-align : center;
+   padding-bottom : 22px;
+   text-align : center;
+   ul {
+        li {
+            @include inline-block;
+            width : 150px;
+            a {
+                color : #333;
+            }
+        }   
+   } 
+}
+.ft-line {
+    width : 980px;
+    height : 32px;
+    background : url("#{$img_host}/ft_line.png") no-repeat 0px 0px;
+}
+.ft-ba {
+    text-align : center;
+    color :#7A8E9D;
+    margin-top : 24px;
+    padding-bottom : 14px;
+    p {
+        font-size : 12px;
+        line-height : 2em;
+        padding-bottom : 8px;
+    }
+
+}

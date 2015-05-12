@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+@import "../lib/css3-mixins.scss";
+@import "../lib/media-queries.scss";
+@import "../lib/g_vars.scss";
+@import "../lib/reset.scss";
+@import "../lib/aniamte.scss";
+@import "../lib/layout.scss";
+@import "../mod/head.scss";
+@import "../mod/foot.scss";
+@import "../mod/mhd.scss";
+
+.main-body {
+    width : 960px;
+    margin : 0 auto;
+    margin-top : 146px; 
+}
+.map-box {
+    position : relative;
+    margin-top : 25px;
+    .addr-info {
+        position : absolute;
+        top : 0px;
+        left : 50px;
+        width : 350px;
+        height : 350px;
+    }
+    .word-bg {
+        position : absolute;
+        top : 0px;
+        left : 0px;
+        width : 100%;
+        height : 100%;
+        background : #000;
+        @include  opacity(0.5);
+    }
+    .addr {
+        position : relative;
+        color : #fff;
+        padding : 25px;
+        text-align : center;
+        h1 {
+            font-size : 20px; 
+        }
+        p {
+            text-align : left;
+            font-size : 14px;
+            line-height : 1.5em;
+            padding-top : 20px;
+        }
+    }
+}
+
+.corp-dt-box {
+    padding-top : 95px; 
+    ul {
+        width : 750px;
+        overflow : hidden;
+        margin-left : 150px;
+        li {
+            @include fl;
+            margin-right : 80px;
+            .corp-box {
+                font-family : Helvetica,  Arial , sans-serif; 
+                h3 {
+                    font-size : 20px;
+                    line-height : 2em;
+                }
+                .corp-inf {
+                    font-size : 14px;
+                    line-height: 1.5em;
+                    color : #5C5C5C;
+                }
+            }
+        }
+    }
+
+}
+
+.service-box {
+    padding-left : 150px;
+    margin-top : 65px;
+    font-family : Helvetica,  Arial , sans-serif; 
+    h3 {
+        font-size : 20px;
+        line-height : 2em;
+    }
+    p {
+        margin-top : 0px;
+        font-size : 14px;
+        line-height: 2.2em;
+        color : #5C5C5C;
+    }
+}

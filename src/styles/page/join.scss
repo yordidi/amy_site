@@ -1,0 +1,93 @@
+
+.m-intro {
+    margin-top : 200px;
+    .lt-info {
+        font-size : 14px;
+        color : #666;
+    }
+}
+.m-text {
+    text-align : center;
+    color : #333;
+    line-height : 2em;
+    font-size : 12px;
+    margin-top : 34px;
+    font-size : 16px;
+}
+.m-email {
+    font-size : 21px;
+    line-height : 1em;
+    font-weight : bold;
+    padding-bottom : 40px;
+    padding-top : 18px;
+    text-align : center;
+    a {
+        color : #2EC2CC;
+    }
+}
+.m-jobs-nav {
+    width : 960px;
+    margin : 0 auto;
+    background-color : #2C2E2E;
+    ul {
+        overflow : hidden;
+        li {
+            @include fl;
+            height : 42px;
+            width : 160px;
+            line-height : 42px;
+            text-align : center;
+            font-weight : bold;
+            font-size : 18px;
+            a {
+                color : #2EC2CC;
+            }
+        }
+        .selected {
+            background-color : #2EC2CC;
+            a {
+                color : #fff; 
+            }
+        }
+    }
+}
+.m-jobs-dt {
+    width : 960px;
+    margin : 0 auto;
+    margin-top : 20px;
+    .m-job-dt {
+        overflow : hidden;
+        .clrfix {
+            margin-bottom : 20px;
+        }
+        .m-lcol {
+            @include fl;
+            width : 50%;
+        }
+        .m-rcol {
+            @include fr;
+            width : 50%;
+        }
+    }
+    .job-dt {
+        h2 {
+            font-weight : bold;
+            font-size : 20px;
+            padding-bottom : 25px;
+        }
+        .jobs ,.pst {
+            padding-right : 60px;
+            line-height : 2.1em;
+        }
+        .pst {
+            padding-top : 20px; 
+            .pst-lb {
+                padding : 5px 0px;
+                font-weight : bold;
+            }
+            .pst-ct {
+            }
+        }
+    }
+
+}

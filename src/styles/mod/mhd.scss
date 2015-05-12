@@ -1,0 +1,20 @@
+.m-hd {
+    .m-hd-inner {
+        text-align : center;
+        padding-bottom : 10px;
+        border-bottom : 1px solid #2EC2CC; 
+        .sub-tit {
+            border : 2px solid #2EC2CC;
+            border-left : 0px;
+            border-right : 0px;
+            font-size : 23px;
+            line-height : 25px;
+            color : #2EC2CC;
+            @include inline-block;
+        }
+        .tit {
+            font-size : 32px;
+            @include inline-block;
+        }
+    }
+}

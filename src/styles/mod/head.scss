@@ -1,0 +1,151 @@
+.g-hd-bg {
+    background-color : #faf9f4;
+    @include opacity(0.7);
+    position : absolute;
+    top : 0px;
+    left : 0px;
+    height : 48px;
+    width : 100%;
+    display: block\9;
+}
+
+.g-nav {
+    height : 48px; 
+    @include  clrfix;
+    position : relative;
+    background-color : rgba(250,249,244,0.7);
+    z-index : 10;
+    .all-menu {
+        font-size : 18px;
+        line-height : 24px;
+        .lb {
+            color : #2C2E2E;
+        }
+        .lb , .ico{
+            vertical-align : top;
+            @include inline-block;
+            cursor : pointer;
+        }
+        .ico {
+            width : 24px;
+            height : 24px;
+            background : url('#{$img_host}/amy_ssp.png') no-repeat 0 0 ;
+        }
+        .wm {
+            background-position : -40px 0px;
+        }
+        .mu {
+            background-position : 0px 0px; 
+        }
+    }
+    .menu {
+        padding-left : 14px;
+        @include fl; 
+        .ico {
+            margin-right : 14px;
+        }
+    }
+    .hi-frd {
+        padding-right : 14px;
+        @include fr;
+        .ico {
+            margin-left : 14px;
+        }
+    }
+    .all-menu {
+        @include clrfix;
+        font-size : 14px;
+        height : 48px;
+        line-height : 48px;
+        a {
+            color : #2C2E2E;
+            &:hover {
+                color : #fff;
+            }
+        }
+        .m-it ,.ml-it {
+            width : 168px;
+            text-align : center;
+            a:hover {
+                color : #2ec2cc;
+            }
+        }
+        
+        .lms {
+            @include fl;  
+            .ico {
+                margin-top : 12px;
+                margin-left : 14px;
+            }   
+            .ico-r {
+                background : url('#{$img_host}/amy_ssp.png') no-repeat 0 -48px ;
+            }
+            .active {
+                a{
+                    color : #2EC2CC;
+                }
+                height : 44px;
+                border-bottom : 4px solid #2EC2CC;
+            }
+            .m-it {
+                width : 148px;
+            }
+
+        }
+        .rms {
+            @include fr;
+            .ml-it {
+            }
+            .weibo-ico {
+                @include fl;
+                width : 28px;
+                height : 28px;
+                background : url('#{$img_host}/amy_ssp.png') no-repeat -40px 0 ;
+                margin : 10px 8px 0px 31px;
+            }
+            .weixin-ico {
+                @include fl;
+                width : 28px;
+                height : 28px;
+                margin : 10px 8px 0px 31px;
+                background : url('#{$img_host}/amy_ssp.png') no-repeat 0px 0px ;
+            }
+            .active {
+                 background-color : #fff;
+            }
+            .txt-wrap {
+                overflow : hidden;
+                display : block;
+            }
+            .txt {
+            }
+            .wx-code {
+                display : none;
+                background-color : #fff;
+                padding : 0 10px;
+                height : 168px;
+                overflow : hidden;
+                img {
+                    margin-top : 10px;
+                }
+            }
+            .ml-it {
+                @include fr;
+                text-align : left;
+            } 
+        }
+        ul {
+             li {
+                @include fl;
+             }
+        }
+    }
+    .logo {
+        @include fl;
+        width : 88px;
+        height : 104px;
+        margin-left : 64px;
+        margin-right : 54px;
+        background : url('#{$img_host}/logo.png') no-repeat 0 0 ;
+    }
+}

@@ -1,0 +1,371 @@
+.m-info-box {
+    .m-info-hd {
+        width : $tw;
+        margin : 0 auto;
+        padding-top : 64px;
+        text-align : center;
+        .smt-tit {
+            @include  inline-block;
+            border : 2px solid #2EC2CC;
+            border-left : 0px;
+            border-right : 0px;
+            line-height : 28px;
+            color : #2EC2CC;
+            font-size : 26px;
+        }
+        .tit {
+            @include  inline-block;
+            color : #2C2E2E;
+            font-size : 32px;
+        }
+        .des {
+            @include  inline-block;
+            font-size : 14px;
+            color : #666;
+        }
+    }
+}
+
+.m-prd-intro {
+    margin-top : 20px;
+    
+    .prds {
+        width : 960px;
+        margin : 0 auto;
+        border-top : 1px solid #2EC2CC;
+        padding-top : 40px;
+        ul {
+            width : 100%;
+            margin-left : 10px;
+            @include clrfix;
+            .prd-ico {
+                @include  fl;
+                width : 300px;
+                height : 300px;
+                margin-right : 20px;
+                background-color : #ccc;
+                position : relative;
+                .prd-st {
+                    display : none;
+                }
+                &:hover {
+                    .prd-st {
+                        display : block;
+                        cursor : pointer;
+                    }
+                }
+                .pl-mask {
+                    position : absolute ;
+                    top : 0;
+                    left : 0;
+                    width : 100%;
+                    height : 100%;
+                    background-color : #2C2E2E;
+                    @include  opacity(0.7);
+                    @include transition(opacity 0.5s); 
+                }
+                .prd-text {
+                    position : relative;
+                    text-align : center;
+                }
+                .mb-logo {
+                    width : 99px;
+                    height : 99px;
+                    margin : 0 auto;
+                    margin-top : 60px;
+                    background : url('#{$img_host}/mb_logo.png') no-repeat  0 0;
+                }
+                .crm-logo {
+                    width : 165px;
+                    height : 99px;
+                    background : url('#{$img_host}/crm_logo.png') no-repeat  0 0;
+                }
+                .shop-logo {
+                    width : 102px;
+                    height : 102px;
+                    background : url('#{$img_host}/shop_logo.png') no-repeat  0 0;
+                }
+                .mb-txt {
+                    @include inline-block;
+                    color : #fff;
+                    border : 1px solid #fff;
+                    border-left : 0px;
+                    border-right : 0px;
+                    line-height : 32px;
+                    font-size : 30px;
+                    margin-top : 8px;
+                    padding : 0 5px;
+                }
+                .shop-mask {
+                    background-color : #1F2C57;
+                    @include  opacity(0.7);
+                }
+                .mb-stxt {
+                    color : #fff;
+                    font-size : 18px;
+                    line-height : 30px;
+                }
+                .lz-txt {
+                    padding : 0 10px;
+                }
+                .letter {
+                    line-height :32px;
+                    padding-bottom : 2px;
+                    font-family : Helvetica,  Arial;
+                }
+            }
+            .selected {
+                .prd-st {
+                    display : block;
+                    cursor : pointer;
+                }
+            }
+            .mb-bg-pic {
+                width : 300px;
+                height : 300px;
+                background : url('#{$img_host}/xx1.jpg?v=1') no-repeat  0 0;
+            }
+            .crm-bg-pic {
+                width : 300px;
+                height : 300px;
+                background : url('#{$img_host}/CRM.jpg') no-repeat  0 0;
+            }
+            .shop-bg-pic {
+                width : 300px;
+                height : 300px;
+                background : url('#{$img_host}/xx3.jpg') no-repeat  0 0;
+            }
+        }
+    }
+}
+
+.m-prd-dt-box {
+    height : 680px;
+    width : 100%;
+    margin-top : 30px;
+    background-color : #647C8D; 
+
+    .m-prd-dt {
+        position : relative ;
+        width : 960px;
+        margin : 0 auto;
+        .up-arrow {
+            width : 30px;
+            height : 15px;
+            position : absolute;
+            top : -15px;
+            left : 144px;
+            background : url('#{$img_host}/amy_ssp.png') no-repeat -168px -43px;
+        }
+        .up-center {
+            left : 470px;
+        }
+        .up-right {
+            left : 785px;
+        }
+    }
+}
+.intro_1 {
+    .m-prd-dt-box {
+        .m-prd-dt {
+            .up-arrow {
+                left : 470px;
+            }
+        }
+    }
+}
+.intro_2 {
+    .m-prd-dt-box {
+        background-color : #1F2C57;
+        .m-prd-dt {
+            .up-arrow {
+                left : 785px;
+                background-position : -168px -86px;
+            }
+        }
+    }
+
+}
+
+.m-prd-dt-box {
+    .prd-dts {
+         width : 960px;
+         height : 680px;
+         display:table-cell;
+         vertical-align:middle;
+         *font-size:0px; 
+         @include clrfix;
+         .dt-box {
+            @include inline-block;
+            vertical-align:middle;
+            font-size:14px;
+         }
+         .lh {
+            @include inline-block;
+            height:100%;
+            vertical-align:middle;
+         }
+         .mb-box {
+            height : 512px;
+            width : 100%;
+            .mb-pic {
+                @include fl;
+                .ip-bg {
+                    position : relative;
+                    width : 256px;
+                    height : 512px;
+                    background : url('#{$img_host}/ip6_bg.png') no-repeat 0 0;
+                    .img-box {
+                        position : absolute;
+                        top : 65px;
+                        left : 18px;
+                        width : 217px;
+                        height : 385px;
+                        overflow : hidden;
+                        img {
+                            width : 100%;
+                        }
+                    }
+                }
+                .and-bg {
+                    position : relative;
+                    width : 249px;
+                    height : 515px;
+                    background : url('#{$img_host}/and_bg.png') no-repeat 0 0;
+                    .img-box {
+                        position : absolute;
+                        top : 56px;
+                        left : 13px;
+                        width : 227px;
+                        height : 403px;
+                        overflow : hidden;
+                        img {
+                            width : 100%;
+                        }
+                    }
+
+                }
+
+            }
+            .mb-info {
+                width : 452px;
+                text-align : center;
+                .mb-sm-logo {
+                    width : 320px;
+                    margin : 0 auto;
+                    border-bottom : 1px solid #8095A5;
+                    padding-bottom : 20px;
+                    .sm-logo {
+                        width : 98px;
+                        height : 98px;
+                        margin : 0 auto;
+                        //background : url('#{$img_host}/app_icon.png') no-repeat 0 0;
+                    }
+                }
+
+                .mb-word {
+                    padding-top : 28px;
+                    .mb-tit-box {
+                        font-size : 24px;
+                        line-height : 1em;
+                        color : #fff;
+
+                        .l-arrow , .r-arrow , .tit-hd {
+                            @include inline-block;
+                            display : none;
+                        }
+                        .tit-hd {
+                            width : 328px;
+                        }
+                         .l-arrow , .r-arrow  {
+                            width : 22px;
+                            height : 22px;
+                         }
+                        .l-arrow {
+                            background : url('#{$img_host}/amy_ssp.png') no-repeat -80px -50px;
+                        }
+                        .r-arrow {
+                            background : url('#{$img_host}/amy_ssp.png') no-repeat -136px -50px ;
+                        }
+                     } 
+                    .inf-p {
+                        padding : 15px 0;
+                        line-height : 34px;
+                        font-size : 18px;
+                        color : #C9D1D7;
+                    }
+                }
+            }
+         }
+    }
+}
+.sm-line {
+    @include inline-block;
+    width : 320px;
+    height : 32px;
+    background : url('#{$img_host}/sm_line.png') no-repeat 0 0;
+}
+
+.mb-code {
+    width : 128px;
+    height : 177px;
+    background : #fff;
+    margin : 0 auto;
+    margin-top : 25px;
+    @include border-radius(8px);
+    .code-wrap {
+        padding : 10px;
+        padding-bottom : 5px;
+        .code-ct {
+            width : 106px;
+            height : 106px;
+            background-color : #ccc;
+        }
+        .bw {
+            color : #2DAFB8; 
+            font-size : 14px;
+            border-bottom : 1px solid #2C2E2E;
+            line-height : 1.8em;
+        }
+        .txt {
+           font-size : 12px;
+           line-height : 32px;
+           text-align : center;
+        }
+    }
+}
+
+
+
+/**shop***/
+
+.prd-dt .shop-box{
+    position : relative;
+    .img-box {
+        width : 960px;
+        height : 460px;
+        overflow : hidden;
+        img {
+        }
+    }
+    .shop-inf {
+        position : absolute;
+        top : 0px;
+        left : 0px;
+        width : 100%;
+        color : #fff;
+        text-align : center;
+        h3 {
+            margin-top : 152px; 
+            line-height : 20px;
+            font-size : 18px;
+        }
+        .bw {
+            font-size : 40px; 
+        }
+        .address {
+            margin-top : 90px;
+            font-size : 18px;
+        }
+    }
+}

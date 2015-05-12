@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+@import "../lib/css3-mixins.scss";
+@import "../lib/media-queries.scss";
+@import "../lib/g_vars.scss";
+@import "../lib/reset.scss";
+@import "../lib/aniamte.scss";
+@import "../lib/layout.scss";
+@import "../mod/head.scss";
+@import "../mod/foot.scss";
+@import "../mod/mhd.scss";
+
+
+.m-hd {
+    margin-top : 200px;
+}
+.m-agm-ct {
+    padding-top : 30px;
+    width : 960px;
+    margin : 0 auto;
+    h2 {
+        font-size : 20px;
+        font-weight : bold;
+        padding : 15px 0px;
+    }
+    h3 , .tit {
+        font-size : 16px;
+        padding : 8px 0px;
+    }
+    p {
+        line-height : 1.8em;
+        text-indent : 32px;
+    }
+    .sect {
+        padding-left : 32px;
+        ul li {
+            padding : 5px 0px; 
+        }
+        ol li {
+            padding : 5px 0px;
+        }
+    }
+    ol {
+        margin-left : 30px;
+    }
+}

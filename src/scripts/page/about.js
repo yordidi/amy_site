@@ -1,0 +1,1 @@
+require('../mod/head.js');

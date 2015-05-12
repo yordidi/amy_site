@@ -1,0 +1,76 @@
+.m-crm-dt-box {
+    height : 500px;
+    width : 1070px;
+    .m-crm-imgbox {
+        margin-left : -120px;
+        position : relative ;
+        width : 867px;
+        height : 500px;
+        @include fl;
+        background : url('#{$img_host}/crm_bg.png') no-repeat 0 0;
+        .img-pt {
+            position : absolute ;
+            top : 32px;
+            left : 105px;
+            width : 657px;
+            height :410px;
+            overflow : hidden;
+            ul {
+                width : 2000px;
+                li {
+                    @include fl;
+                    width : 657px;
+                    height :410px;
+                    overflow : hidden;
+                    img {
+                        width : 100%;
+                        height : 100%;
+                    }
+                }
+            }
+        } 
+    }
+    .m-crm-info {
+        @include fr;
+        padding-top : 75px;
+        width : 320px;
+        .crm-hd {
+           font-size : 32px;
+           font-weight : bold;
+           text-align : center;
+           color : #fff;
+        }
+        .crm-sub-tit {
+           font-size : 22px;
+           font-weight : bold;
+           text-align : center;
+           color : #fff;
+        }
+        .crm-inf {
+            padding-top : 20px;
+            text-align : center;
+            p {
+                color : #C9D1D7;
+                font-size : 18px;
+                line-height : 2em;
+            }
+        }
+        .go-crm {
+            border : 1px solid #2EC2C6; 
+            @include  border-radius(5px);
+            height : 40px;
+            width : 160px;
+            display : block;
+            text-align : center;
+            background : rgba(0,0,0,.3);
+            margin : 35px auto;
+            font-size : 16px;
+            font-weight : bold;
+            line-height : 40px;
+            color : #2EC2CC; 
+            background-color : #2EC2CC;
+            color : #fff;
+        }
+    }
+
+}

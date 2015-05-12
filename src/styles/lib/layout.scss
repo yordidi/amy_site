@@ -1,0 +1,31 @@
+$tw : 980px;
+$min-w : 1200px;
+body {
+    background-color : #f9f9f2;
+}
+.g-hd-box {
+    //border-top : 1px solid #D8D8D8;
+}
+.g-hd-box , .g-bd-box , .g-hd-box{
+    width : 100%;
+    min-width : $min-w;
+}
+
+.g-hd-box {
+    position : absolute;
+    top : 0px;
+    left : 0px;
+    width : 100%;
+    min-width : $min-w;
+    z-index : 30;
+    .g-hd {
+        margin : 0 auto;
+    }
+}
+.g-bd-box {
+    min-width : $min-w;
+    .g-bd {
+        width : 100%;
+        margin : 0 auto;
+    }
+}
