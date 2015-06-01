@@ -17,7 +17,7 @@ $(function(){
                var $item = $li.eq(n+max_init_count);
                if ($item[0] && !$item.data("inited")) {
                    $item.data("inited",true);
-                   $item.html('<img src="'+$item.data("src")+'" >');
+                   $item.find("img").attr('src',$item.data("src"));
                }
            }
            start();
@@ -32,7 +32,7 @@ $(function(){
        var $item = $li.eq(i);
        if ($item[0] &&  !$item.data("inited")) {
            $item.data("inited",true);
-           $item.html('<img src="'+$item.data("src")+'" ><i></i>');
+           $item.find('img').attr("src",$item.data("src"));
        }
    }
    start();
